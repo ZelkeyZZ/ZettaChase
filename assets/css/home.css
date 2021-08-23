@@ -1,0 +1,48 @@
+div[class*=topchange-] {
+	display: none
+}
+
+div.topractive {
+	display: block!important
+}
+
+.topbutton-wrap span {
+	cursor: pointer
+}
+
+.topbutton-wrap span.topractive {
+	background-color: #63068f!important;
+	color: #976eb4!important;
+	cursor: pointer
+}
+
+.unit {
+	font-size: small;
+	min-height: 100px;
+	line-height: 85px;
+}
+
+.unit .item_1 {
+	float: left;
+}
+
+.unit .item_2 {
+	margin-left: 10%;
+	float: left;
+}
+
+.unit .item_3 {
+	margin-left: 1%;
+	float: left;
+}
+
+.unit .item_4 {
+	
+	float: right;
+	text-align: right;
+}
+
+.unit img {
+	width: 4em;
+	height: 4em;
+}
