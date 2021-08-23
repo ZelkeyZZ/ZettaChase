@@ -1,0 +1,221 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <title>ZettaChase | Home</title>         
+        <meta charset="utf-8"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/> 
+        <link rel="stylesheet" href="assets/css/main.css"/> 
+        <link rel="stylesheet" href="assets/css/all.min.css"/> 
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> 
+		<link rel="stylesheet" href="assets/css/home.css"/>
+        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/> 
+    </head>     
+    <body class="is-preload">
+        <!-- Page Wrapper -->         
+        <div id="page-wrapper"> 
+            <div id="bg"></div>
+            <!-- Header -->             
+            <header id="header" class="alt"> 
+                <h1>
+				<a href="index.html"><img src="assets/images/header_EN.png" style="width:9%;"></a>
+				</h1> 
+                <nav>
+                    <a href="">Home</a>
+					<a href="forum.html">Forum</a>
+					<a href="#menu">Register</a>
+					<a href="donate.html">Donate</a>
+					<a href="rankers.html">Rankings</a>
+                    <a href="download.html">Downloads</a>
+					<a>
+						<form name="language" action="<?=$_SERVER['PHP_SELF'];?>" method="post">
+							<select onchange = "document.language.submit()" name="lang" style="background-color:transparent;">
+								<option selected="selected">Languages</option>
+								<option value="EN">English</option>
+								<option value="JP">Japanese</option>
+								<option value="KR">Korean</option>
+								<option value="PT">Portuguese</option>
+							</select>
+						</form>
+					</a>
+                </nav>                
+            </header>
+			<!-- Menu -->
+			<nav id="menu">
+				<div class="inner">
+					<form method="post" action="#">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="field">
+                                    <label for="Login">Username</label>
+									<div class="tooltip" data-text="Username must have a minimum length of 8 to 16 character.">
+										<input style="text-align:center;" type="text" name="Login"placeholder="Username" class="form-control" id="Login" required  size="16" maxlength="16" minlength="8">
+									</div>
+									<br/>
+                                    <label for="pwd">Password</label>
+									<div class="tooltip" data-text="Password must have a minimum length of 8 to 15 characters.">
+										<input style="text-align:center;" type="password" name="pwd" placeholder="Password" class="form-control" id="pwd" required size="15" maxlength="15" minlength="8"> 
+									</div>
+									<br/>
+                                    <label for="pwd">Confirm Password</label>
+									<div class="tooltip" data-text="Re-enter Password.">
+										<input style="text-align:center;" type="password" name="pwd" placeholder="Confirm Password" class="form-control" id="pwd" required size="15" maxlength="15" minlength="8">
+									</div>
+									<br/>
+                                    <label for="email">Email Address</label>
+									<div class="tooltip" data-text="Email must be valid for account verification.">
+										<input style="text-align:center;" type="email" name="email" placeholder="Email Address" class="form-control" id="email" required size="45" maxlength="45"> 
+									</div>
+									<br/>
+                                    <label for="email">Confirm Email Address</label>
+									<div class="tooltip" data-text="Re-enter Email.">
+										<input style="text-align:center;" type="email" name="email" placeholder="Confirm Email Address" class="form-control" id="email" required size="45" maxlength="45">
+									</div>
+									<br/>
+									<input type="checkbox" id="TOS" name="TOS">
+									<label for="TOS">I have read and agreed to the <a href="agreement" target="_blank" style="color:skyblue;">Terms of Service</a></label>
+                                </div>
+                            </div>
+                            <button class="button d-block mx-auto text-uppercase" type="submit">Register</button>
+                        </div>
+                    </form>
+					<a href="#" class="close">Close</a>
+				</div>
+			</nav>
+            <!-- Banner -->             
+            <section id="banner"> 
+                <p style><img src="assets/images/header_EN.png"></p> 
+            </section>             
+            <!-- Wrapper -->             
+            <div id="wrapper"> 
+                <!-- Login -->                 
+                <section id="footer" class="wrapper alt"> 
+                    <div class="inner"> 
+                        <p>&nbsp;</p> 
+                        <form method="post" action="#">
+                            <h2 class="major"><img src="assets/images/UP_EN.png" style="width:35%;"></h2>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="field">
+                                        <label for="Login">Username</label>
+                                        <input style="text-align:center;" type="text" name="Login" placeholder="Username" class="form-control" id="Login" required  size="16" maxlength="16" minlength="8"> 
+                                    </div>
+                                    <div class="field">
+                                        <label for="pwd">Password</label>    
+                                        <input style="text-align:center;" type="password" name="pwd" placeholder="Password" class="form-control" id="pwd" required  size="15" maxlength="15" minlength="8"> 
+                                    </div>
+                                </div>
+                                <button class="button d-block mx-auto text-uppercase" type="submit">Login</button>
+                                <a href="#" class="d-block text-uppercase" style="text-align:center;">Forgotten Password?</a>
+                            </div>
+                        </form>
+                        <ul class="contact"> 
+                            <h2 class="major"><img src="assets/images/NU_EN.png" style="width:44%;"></h2> 
+                            <!-- Swiper -->                             
+                            <div class="swiper-container"> 
+                                <div class="swiper-wrapper"> 
+                                    <div class="swiper-slide"><a href="#"><img src="assets/images/news_1.png"></a></div> 
+                                    <div class="swiper-slide"><a href="#"><img src="assets/images/news_2.png"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="assets/images/news_3.png"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="assets/images/news_4.png"></a></div>
+                                    <div class="swiper-slide"><a href="#"><img src="assets/images/news_5.png"></a></div>
+                                </div>                                 
+                                <!-- Add Pagination -->                                 
+                                <div class="swiper-pagination"></div>                                 
+                            </div>
+							<br/>
+                        </ul>
+						<div class="inner">
+							<ul class="contact">
+								<div class="box" style="background-color:#333;">
+									<p style="text-align:center;"><img src="assets/images/T5R_EN.png" style="width:44%;"></p>
+									<ul class="actions" style="margin:auto;">
+										<span class="button1 small d-block mx-auto text-uppercase topbutton">Top Daily</span>
+										<span class="button1 small d-block mx-auto text-uppercase topbutton">Top Weekly</span>
+										<span class="button1 small d-block mx-auto text-uppercase topbutton">Top Monthly</span>
+									</ul>
+									<div class="topchange">
+										<div class="topchange-0 topractive">
+											<table>
+												<tbody>
+													<tr>
+														<td>
+															<p style="text-align:center;"><img src="assets/images/rank/20.png"  width="20%"/></p>
+															<p style="text-align:center;">Ranking in Update...</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="topchange-1">
+											<table>
+												<tbody>
+													<tr>
+														<td>
+															<p style="text-align:center;"><img src="assets/images/rank/20.png"  width="20%"/></p>
+															<p style="text-align:center;">Ranking in Update...</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="topchange-2">
+											<table>
+												<tbody>
+													<tr>
+														<td>
+															<p style="text-align:center;"><img src="assets/images/rank/20.png"  width="20%"/></p>
+															<p style="text-align:center;">Ranking in Update...</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</ul>
+						</div>
+                    </div>
+                </section>
+                <!-- Footer -->                 
+                <section id="footer" class="wrapper1">
+                    <div class="inner" id="bg1">
+                        <p>
+							<span class="image left">
+								<img src="assets/images/mascot-left.png"/>
+							</span>
+							<span class="image right">
+								<img src="assets/images/mascot-right.png"/>
+							</span>
+							ZettaChase is a community-oriented server created by our own custom development team, to provide a unique experience for the players and community. KOG Games and its game GrandChase are not affiliated, endorsed nor related to ZettaChase. 
+							<br/>
+							<br/>
+							ZetaZero Entertainment is a Not-for-profit Organization that makes no profit for its owner; all servers and services of ZetaZero Entertainment are supported solely by donations from its users or players. 
+						</p>
+                        <ul class="copyright">
+							<li>
+								&nbsp;&nbsp;
+								<a href="https://twitter.com/"><span class="fa-brands fa-twitter"></span></a>&nbsp;&nbsp;
+								<a href="https://fb.me/"<span class="fa-brands fa-facebook-f"></span></a>&nbsp;&nbsp;
+								<a href="https://youtube.com/"<span class="fa-brands fa-youtube"></span></a>&nbsp;&nbsp;
+								<a href="https://discord.com/"<span class="fa-brands fa-discord"></span></a>
+							</li>
+                            <li>&copy; ZetaZero Entertainment. All rights reserved.</li>
+                            <li>Design: ZetaZero</li> 
+                        </ul>                         
+                    </div>                     
+                </section>                 
+            </div>             
+            <!-- Scripts -->             
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script src="assets/js/all.min.js"></script>
+            <script src="assets/js/conflict-detection.min.js"></script>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script src="assets/js/autoswipe.js"></script>
+			<script src="assets/js/switcher.js"></script>
+    </body>
+</html>
